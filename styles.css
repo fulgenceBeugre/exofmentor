@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*mobile size*/
+body {
+  height: 667px;
+  width: 375px;
+  background-color: hsl(30, 38%, 92%);
+}
+
+#div_container {
+  width: 345px;
+  background-color: hsl(158, 36%, 37%);
+  background-color: hsl(0, 0%, 100%);
+  margin: 25px 15px;
+  border-radius: 10px;
+}
+
+#div_droite img {
+  width: 345px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#div_gauche {
+  padding: 25px;
+}
+
+p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+
+#title {
+  font-family: "Montserrat", "Helvetica Neue";
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+}
+
+#price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  font-family: "Fraunces", serif;
+}
+
+#price b {
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+}
+
+#price i {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  height: 45px;
+  width: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  border-color: hsl(158, 36%, 37%);
+  font-weight: bold;
+  font-size: 18px;
+}
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+button:hover {
+  background-color: hsl(158, 77%, 12%);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/*Desktop size*/
+@media (min-width: 1200px) {
+  body {
+    height: 700px;
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #div_container {
+    display: flex;
+    width: 650px;
+    height: 450px;
+    margin: 45px 380px;
+  }
+  #div_droite,
+  #div_gauche {
+    width: 325px;
+    height: 450px;
+  }
+
+  #price {
+    padding-top: 20px;
+  }
+
+  #div_gauche {
+    padding: 15px 35px;
+  }
+
+  #div_droite img {
+    height: 450px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  button {
+    margin-top: 20px;
+  }
+  img {
+    src: url("./images/image-product-desktop.jpg");
+  }
+}
